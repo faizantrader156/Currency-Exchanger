@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARWAT FX Exchange | Created by Faizan Ahmad</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 2-3 Second Professional Splash Screen / Intro Animation -->
+    <div id="splash-screen">
+        <div class="splash-content">
+            <div class="animated-icon">
+                <i class="fa-solid fa-repeat spinner-ring"></i>
+                <i class="fa-solid fa-coins center-coin"></i>
+            </div>
+            <h2>MARWAT FX Exchange</h2>
+            <p class="splash-sub">Loading Live Financial Rates...</p>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Background Animated Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <!-- Main Converter App -->
+    <div class="converter-container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="title-group">
+                <i class="fa-solid fa-chart-line cyan-icon"></i>
+                <h2>MARWAT FX Exchange</h2>
+            </div>
+            <p class="watermark"><code>&lt;/&gt;</code> Created by Faizan Ahmad</p>
+        </div>
+
+        <!-- Main Form -->
+        <form id="converter-form">
+            <!-- Amount Input -->
+            <div class="input-group">
+                <label for="amount">Enter Amount</label>
+                <input type="number" id="amount" value="1" min="1" step="any" placeholder="100" required>
+            </div>
+
+            <!-- Currency Selection Group -->
+            <div class="currency-group">
+                <div class="select-box">
+                    <label>From</label>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" id="from-flag" alt="Flag">
+                        <select id="from-currency"></select>
+                    </div>
+                </div>
+
+                <button type="button" id="swap-btn" title="Swap Currencies">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <div class="select-box">
+                    <label>To</label>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/PK/flat/64.png" id="to-flag" alt="Flag">
+                        <select id="to-currency"></select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rate Result Display -->
+            <div class="result-box">
+                <span class="exchange-rate">Fetching exchange rate...</span>
+            </div>
+
+            <!-- Action Button -->
+            <button type="submit" id="get-rate-btn">
+                <span>Convert Currency</span>
+                <i class="fa-solid fa-bolt"></i>
+            </button>
+        </form>
+
+        <!-- Direct Contact Footer -->
+        <div class="contact-bar">
+            <a href="https://wa.me/923489573662" target="_blank" class="contact-btn wa">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="mailto:faizanaahmad091@gmail.com" class="contact-btn gmail">
+                <i class="fa-solid fa-envelope"></i> Gmail
+            </a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
